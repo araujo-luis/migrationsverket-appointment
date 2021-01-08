@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "prestart": "npm run build",
     "start": "nodemon --watch src/**/*.ts --ignore src/**/*.spec.ts --exec ts-node src/index.ts"
   },
@@ -21,6 +22,7 @@
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "joi": "^17.3.0",
     "nodemailer": "^6.4.17"
   },
   "devDependencies": {
@@ -30,6 +32,10 @@
     "eslint": "^7.11.0",
     "nodemon": "^2.0.4",
     "ts-node": "^9.0.0",
-    "typescript": "^4.0.3"
+    "typescript": "^4.0.3",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-airbnb-typescript": "^12.0.0",
+    "eslint-config-prettier": "^6.10.0",
+    "prettier": "^1.19.1"
   }
 }

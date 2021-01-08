@@ -3,6 +3,6 @@ import * as MigrationController from '../controllers/MigrationController';
 
 const MigrationRoute = Router();
 
-MigrationRoute.get('/', MigrationController.findSlots);
+MigrationRoute.get('/:agency/:appoitmentType/:numberOfPeople', MigrationController.findSlots);
 
 export default MigrationRoute;
