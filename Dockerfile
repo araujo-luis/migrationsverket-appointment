@@ -6,7 +6,7 @@ COPY . .
 ENV SENDER_EMAIL=migrationsweden@outlook.com \
     SENDER_EMAIL_PASS=LisaGuapa \
     RECEIVER_EMAIL=luis_araujocaballero@hotmail.com \
-    INTERVAL_DELAY=6000 \
+    INTERVAL_DELAY=300000 \
     NODE_ENV=production
 EXPOSE 4000
 RUN npm run build
