@@ -6,7 +6,7 @@ import { FindSlots } from '../utils/types';
 
 export const findSlots = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
 try {
-    const { agency, appoitmentType, numberOfPeople, date } = req.params;
+    const { agency, appoitmentType, numberOfPeople, startDate, endDate } = req.params;
 
     const agencyData = validateAgency(agency);
     const appointmentTypeData = validateAppoitmentType(parseInt(appoitmentType));
@@ -20,12 +20,13 @@ try {
         agency: agencyData?.code || '', 
         appointmentType: appointmentTypeData?.code || 0,  
         numberOfPeople: parseInt(numberOfPeopleData || '0'),
-        date
+        startDate,
+        endDate
     };
 
     const response = await MigrationService.findSlots(data);
    
-    res.status(200).json(response.data.length);
+    res.status(200).json(response.data);
 } catch (error) {
     console.error(error)
 }

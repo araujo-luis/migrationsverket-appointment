@@ -5,7 +5,8 @@ export interface FindSlots {
     agency: string;
     appointmentType: number;
     numberOfPeople: number;
-    date: string;
+    startDate: string;
+    endDate: string;
 }
 
 export interface EmailData {
