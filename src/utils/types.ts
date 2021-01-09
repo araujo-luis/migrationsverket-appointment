@@ -1,6 +1,6 @@
-export type FindSlots = {
+export interface FindSlots {
     agency: string;
     appointmentType: number;
     numberOfPeople: number;
-
+    date: string;
 }
