@@ -1,6 +1,6 @@
 # Swedish Migrationsverket Appoitment Alert App
 
-Since getting a slot at the Swedish Migration Agency (Migrationsverket) you need to look at the site over and over again, at some point you will get exhausted. This is a tedious way to find a slot and schedule your appointment.
+Getting a slot at the Swedish Migration Agency (Migrationsverket) is not that easy, you need to look at the site over and over again. This is a tedious way to find a slot and schedule your appointment.
 
 The intent of this app is to automate this process so you can go to the site when there is a slot available in a date range you set up previously. It sends a request every certain period of time to validate available slots.
 
